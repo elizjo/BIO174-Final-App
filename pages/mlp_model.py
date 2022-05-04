@@ -11,8 +11,7 @@ def prediction(seq_len, mole_w, gravy, instab, aromat):
         # Making predictions 
         prediction = classifier.predict( 
             [[seq_len, mole_w, gravy, instab, aromat]])
-        
-        input_file.close()
+
      
     if prediction == 1:
         pred = 'Disordered'
